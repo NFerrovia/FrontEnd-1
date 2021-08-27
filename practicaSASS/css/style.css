@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+main .steps .step-box .number, footer .contact a img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  -webkit-box-shadow: -3px 0px 0px 1px #03faee;
+          box-shadow: -3px 0px 0px 1px #03faee;
+  line-height: 40px;
+  text-align: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  line-height: 40px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li {
+  padding: 0 10px 10px;
+  border-bottom: 3px solid transparent;
+  /*uso operador & para indicar la pseudoclase*/
+}
+
+header nav ul li:hover {
+  color: #8b8b8b;
+  border-bottom: 3px solid #03faee;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  padding: 50px 10%;
+}
+
+main .principal {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+main .principal .principal-text {
+  width: 50%;
+  padding: 5% 0;
+}
+
+main .principal .principal-text h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+}
+
+main .principal .principal-text h2 .highlight {
+  height: 40px;
+  display: inline-block;
+  background-color: #03faee;
+}
+
+main .principal .principal-text p {
+  margin: 20px 0;
+  line-height: 30px;
+  color: #8b8b8b;
+}
+
+main .principal .principal-text .signing-btn button {
+  font-size: 1rem;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px dashed #000;
+  padding: 20px 30px;
+  background-color: #03faee;
+}
+
+main .principal .principal-text .signing-btn button:hover {
+  background-color: #92f7f2;
+  border: 1px dotted #000;
+}
+
+main .principal .principal-image {
+  width: 50%;
+}
+
+main .principal .principal-image img {
+  width: 100%;
+}
+
+main .steps {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .steps .step-box {
+  width: 30%;
+  margin-right: 4%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #f8f8f8;
+  /*extendido estilo*/
+}
+
+main .steps .step-box:last-child {
+  margin-right: 0;
+}
+
+main .steps .step-box .number {
+  background-color: #f8f8f8;
+  margin: -12px 0 0 -10px;
+}
+
+main .steps .step-box h3 {
+  width: 20px;
+  height: 10px;
+  margin: 15px 0;
+  background-color: #03faee;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  padding: 20px 0;
+}
+
+footer .contact {
+  padding: 10px;
+}
+
+footer .contact a {
+  text-decoration: none;
+}
+
+footer .contact a img {
+  /*estilo extendido*/
+  /*lo diferente*/
+  line-height: unset;
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+}
+
+footer .contact a img:hover {
+  background: #92f7f2;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main {
+    margin-bottom: 50px;
+  }
+  main .principal .principal-text {
+    width: 70%;
+  }
+  main .principal .principal-image {
+    width: 30%;
+  }
+  main .steps {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
+  main .steps .step-box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

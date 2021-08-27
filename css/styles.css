@@ -1,0 +1,127 @@
+/* <-------------- Generales ------------->     */
+
+:root {
+  --azul: #00669f;
+  --negro: #000000;
+  --verdeClaro: #1cd1b0;
+  --blanco: #ffffff;
+  --blancoFooter: #fff9f9;
+  --gris: #f3f3f3;
+  --negroDescripcion: #333333;
+  --slerne: #753763;
+}
+
+* {
+  font-family: 'Lobster', sans-serif;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* <-------------- Header ------------->     */
+
+a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+header div {
+  color: var(--blanco);
+}
+
+body {
+  background-color: var(--negro);
+  overflow: hidden;
+}
+
+.navContainer {
+  display: flex;
+  background-color: var(--negro);
+  color: #ffffff;
+  justify-content: flex-end;
+  height: 10vh;
+  align-items: center;
+}
+
+.navContainer a {
+  margin-left: 1vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  margin-right: 1vw;
+
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.navContainer span {
+  position: absolute;
+  margin-left: 1vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  margin-right: 1vw;
+  margin-right: 85vw;
+  font-size: 3em;
+}
+
+.backgroundImg {
+  width: 100vw;
+  height: 80vh;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.logoImg {
+  width: 20vw;
+  position: absolute;
+  margin: 25vh 0vw 0vh 35vw;
+}
+
+.logoNumber {
+  font-family: sans-serif;
+  font-size: 30vh;
+  position: absolute;
+  margin: 23vh 0vw 0vh 55vw;
+  color: white;
+}
+
+a:after {
+  content: '»';
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+/* <-------------- Body ------------->     */
+
+/* <-------------- Footer -------------> */
+
+.footerContainer {
+  position: absolute;
+  width: 100vw;
+  color: var(--blanco);
+  display: flex;
+  background-color: var(--negro);
+  color: #ffffff;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  margin-left: 1vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  margin-right: 1vw;
+}

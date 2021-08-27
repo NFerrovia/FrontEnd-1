@@ -1,0 +1,22 @@
+footer
+    width: 100%
+    padding: 20px 10%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+        padding: 20px 0
+    .contact
+        padding: 10px
+        a
+            text-decoration: none
+            img
+                /*estilo extendido*/
+                @extend %circle
+                /*lo diferente*/
+                line-height: unset
+                margin-left: 20px
+                padding: 10px
+                border: none
+                &:hover
+                    background: $shadow
